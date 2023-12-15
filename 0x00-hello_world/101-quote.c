@@ -6,7 +6,7 @@
  * @fdesc: file description
  * @buf: string array
  * @nbyte: bytes used
- * 
+ *
  * Return: always 1
  */
 int write(int fdesc, const char *buf, unsigned int nbyte);
