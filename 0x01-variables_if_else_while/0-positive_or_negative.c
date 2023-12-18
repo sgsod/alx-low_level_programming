@@ -2,11 +2,13 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
+/**
  * main - entry point
  * Description: print random number and its sign
+ *
  * Return: 0
  */
+
 int main(void)
 {
 	int n;
