@@ -17,9 +17,9 @@ int main(void)
 	{
 		if (alph != 'q' && alph != 'e')
 		{
-		putchar(alph);
-		alph++;
+			putchar(alph);
 		}
+		alph++;
 	}
 	putchar(10);
 
