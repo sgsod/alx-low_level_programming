@@ -14,7 +14,7 @@ int main(void)
 	a = b = '0';
 	while (a <= '8')
 	{
-		while (b <= '9')
+		for (b = 0; b <= '9'; b++)
 		{
 			if (b > a && b != a)
 			{
@@ -26,7 +26,6 @@ int main(void)
 					putchar(' ');
 				}
 			}
-			b++;
 		}
 		a++;
 	}
