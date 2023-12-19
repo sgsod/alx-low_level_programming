@@ -34,18 +34,3 @@ int main(void)
 
 	return (0);
 }
-
-
-		putchar(alph);
-		if (alph < '9')
-		{
-			putchar(',');
-			putchar(' ');
-		}
-		alph++;
-	}
-	putchar(10);
-
-	return (0);
-}
-
