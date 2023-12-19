@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	char alph;
+	short alph;
 
 	alph = '0';
 	while (alph <= '9')
