@@ -7,7 +7,8 @@
 
 void jack_bauer(void)
 {
-	char a, b, c, d, e;
+	char a, b, c, d;
+	int e;
 	char str[6] = "00:00";
 
 	for (a = '0'; a <= '2'; a++)
