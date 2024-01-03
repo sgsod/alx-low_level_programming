@@ -8,7 +8,7 @@
 void jack_bauer(void)
 {
 	char a, b, c, d, e;
-	char str[5] = {a, b, ':', c, d};
+	char str[6] = "00:00";
 
 	for (a = '0'; a <= '2'; a++)
 	{
@@ -18,11 +18,15 @@ void jack_bauer(void)
 			{
 				for (d = '0'; d <= '9'; d++)
 				{
+					str[0] = a;
+					str[1] = b;
+					str[3] = c;
+					str[4] = d;
 					for (e = 0; e < 6; e++)
 					{
 						_putchar(str[e]);
 					}
-					_putchar('\n')
+					_putchar('\n');
 				}
 			}
 		}
