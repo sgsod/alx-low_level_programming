@@ -1,3 +1,4 @@
+#include "main.h"
 /**
   * print_last_digit - print last digit of a value
   * @n: given value
@@ -7,5 +8,6 @@
 
 int print_last_digit(int n)
 {
-	return (n % 10);
+	temp = _abs(n);
+	return (temp % 10);
 }
