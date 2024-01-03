@@ -13,7 +13,7 @@ void jack_bauer(void)
 
 	for (a = '0'; a <= '2'; a++)
 	{
-		for (b = '0'; (b <= '9') || (a == '2' && b < '4'); b++)
+		for (b = '0'; (a < '2' && b <= '9') || (a == '2' && b < '4'); b++)
 		{
 			for (c = '0'; c < '6'; c++)
 			{
@@ -23,7 +23,7 @@ void jack_bauer(void)
 					str[1] = b;
 					str[3] = c;
 					str[4] = d;
-					for (e = 0; e < 6; e++)
+					for (e = 0; e < 5; e++)
 					{
 						_putchar(str[e]);
 					}
