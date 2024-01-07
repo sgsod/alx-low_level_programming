@@ -1,15 +1,16 @@
 #include <stdio.h>
 /**
   * main - Fizz-Buzz test
+  * Return: always 0 success
   */
 
-void main(void)
+int main(void)
 {
 	int n;
 
 	for (n = 1; n <= 100; n++)
 	{
-		if (n % 3 = 0 && n % 5 != 0)
+		if (n % 3 == 0 && n % 5 != 0)
 		{
 			printf("Fizz ");
 			n++;
@@ -26,4 +27,5 @@ void main(void)
 		}
 		printf("%d ", n);
 	}
+	return (0);
 }
