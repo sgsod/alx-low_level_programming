@@ -17,10 +17,12 @@ int main(void)
 			printf("Buzz ");
 
 		else if (n % 5 == 0 && n % 3 == 0)
-			printf("FizzBuzz ");
-
-		else if (n == 100)
-			printf("%d\n", n);
+		{
+			if (n == 100)
+				printf("%d\n", n);
+			else 
+				printf("FizzBuzz ");
+		}
 
 		else
 			printf("%d ", n);
