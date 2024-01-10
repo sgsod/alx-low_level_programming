@@ -6,9 +6,9 @@
   * Return: nothing
   */
 
-int rev_string(char *s)
+void rev_string(char *s)
 {
-	int *a;
+	char *a;
 	int b;
 	int c;
 
