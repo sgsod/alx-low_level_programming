@@ -6,7 +6,7 @@
   * Return: nothing
   */
 
-int _puts(char *str)
+void _puts(char *str)
 {
 	int a;
 
@@ -16,6 +16,4 @@ int _puts(char *str)
 	}
 	if (*(str + a) == '\0')
 		_putchar('\n');
-
-	return (a);
 }
