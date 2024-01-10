@@ -2,8 +2,6 @@
 /**
   * rev_string - reverse a string
   * @s: address of string
-  *
-  * Return: nothing
   */
 
 void rev_string(char *s)
@@ -12,7 +10,7 @@ void rev_string(char *s)
 	int b;
 	int c;
 
-	a = s;
+	a = &s
 	for (b = 0; *(s + b) != '\0'; a++)
 	{
 	}
