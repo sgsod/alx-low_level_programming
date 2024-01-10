@@ -6,11 +6,11 @@
 
 void rev_string(char *s)
 {
-	char *a;
+	char a[];
 	int b;
 	int c;
 
-	a = s;
+	a[] = s;
 	for (b = 0; *(s + b) != '\0'; b++)
 	{
 	}
