@@ -3,11 +3,11 @@
   * @a: first value
   * @b: second value
   */
-void swap_int(int *s, int *b)
+void swap_int(int *a, int *b)
 {
 	int swp;
 
-	swp = *s;
-	*s = *b;
+	swp = *a;
+	*a = *b;
 	*b = swp;
 }
