@@ -6,7 +6,6 @@
 
 void rev_string(char *s)
 {
-	char a[];
 	int b;
 	int c;
 
@@ -14,6 +13,8 @@ void rev_string(char *s)
 	{
 		*(a + b) = *(s + b);
 	}
+	char a[b];
+
 	b--;
 	c = 0;
 	while (b >= 0)
