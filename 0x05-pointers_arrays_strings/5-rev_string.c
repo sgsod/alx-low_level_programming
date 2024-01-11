@@ -10,15 +10,19 @@ void rev_string(char *s)
 	int b;
 	int c;
 
-	str = s;
-	for (b = 0; *(s + b) != '\0'; b++)
+	for (b = 0; *(s + b); b++)
 	{
+	}
+	str = s + (b++);
+	for (b = 0; *(s + b); b++)
+	{
+		*(str + b) = *(s + b);
 	}
 	b--;
 	c = 0;
 	while (b >= 0)
 	{
-		(s + c) = (str + b);
+		*(s + c) = *(str + b);
 		c++;
 		b--;
 	}
