@@ -6,14 +6,13 @@
 
 void rev_string(char *s)
 {
-	char *str;
+	char a[_strlen(s)];
 	int b;
 	int c;
 
 	for (b = 0; *(s + b); b++)
 	{
 	}
-	str = s + (b++);
 	for (b = 0; *(s + b); b++)
 	{
 		*(str + b) = *(s + b);
@@ -26,4 +25,21 @@ void rev_string(char *s)
 		c++;
 		b--;
 	}
+}
+
+/**
+  * _strlen - calculate length of string pointed to
+  * @s: address of string
+  *
+  * Return: length of string
+  */
+
+int _strlen(char *s)
+{
+	int a;
+
+	for (a = 0; *(s + a) != '\0'; a++)
+	{
+	}
+	return (a);
 }
