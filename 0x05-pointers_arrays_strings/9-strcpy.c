@@ -7,7 +7,7 @@
   * Return: pointer to dest
   */
 
-int *_strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int a;
 
