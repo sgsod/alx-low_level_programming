@@ -1,23 +1,25 @@
+#include "main.h"
 #include <stdio.h>
+
 /**
   * print_array - print elements of array of integers
-  * Description: prints integer followed ',' and  ' ' and ends with '\n'
+  * prints integer followed ',' and  ' ' and ends with '\n'
   * @a: array of integers
   * @n: number of elements
   */
+
 void print_array(int *a, int n)
 {
-	int b;
+	int b = 0;
 
-	for (b = 0; *(a + b); b++)
+	while (n >= 1)
 	{
+		if (n != 1)
+			printf("%d, ", a[b]);
+		else
+			printf("%d", a[b]);
+		b++;
+		n++;
 	}
-	if (n == b)
-	{
-		for (b = 0; b < (n - 1); b++)
-		{
-			printf("%d, ", *(a + b));
-		}
-	}
-	printf("%d\n", *(a + b));
+	printf("\n");
 }
