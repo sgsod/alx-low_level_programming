@@ -10,7 +10,8 @@ void print_array(int *a, int n)
 	int b;
 
 	for (b = 0; *(a + b); b++)
-		;
+	{
+	}
 	if (n == b)
 	{
 		for (b = 0; b < (n - 1); b++)
