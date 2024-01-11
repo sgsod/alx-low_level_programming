@@ -13,5 +13,5 @@ void print_array(int *a, int n)
 	{
 		printf("%d, ", *(a + b));
 	}
-	printf("%p\n", *(a + b));
+	printf("%d\n", *(a + b));
 }
