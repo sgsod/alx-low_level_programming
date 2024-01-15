@@ -14,9 +14,9 @@ void rev_array(int *a, int n)
 	c = 0;
 	while (c < n)
 	{
-		b = *(s + c);
-		*(s + c) = *(s + n);
-		*(s + n) = b;
+		b = *(a + c);
+		*(a + c) = *(a + n);
+		*(a + n) = b;
 		n--;
 		c++;
 	}
