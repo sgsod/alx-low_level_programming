@@ -7,17 +7,17 @@
 
 void rev_array(int *a, int n)
 {
-	char a;
+	int b;
 	int c;
 
 	n--;
 	c = 0;
 	while (c < n)
 	{
-		a = *(s + c);
+		b = *(s + c);
 		*(s + c) = *(s + n);
-		*(s + n) = a;
-		b--;
+		*(s + n) = b;
+		n--;
 		c++;
 	}
 }
