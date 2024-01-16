@@ -4,7 +4,7 @@
   * @w: width of grid
   * @h: height of grid
   *
-  * Return: ponter to grid, NULL if w or h is 0 or negative
+  * Return: ponter to grid, NULL if w or h is 0 or negative, NULL if malloc fails
   */
 
 int **alloc_grid(int w, int h)
@@ -16,7 +16,12 @@ int **alloc_grid(int w, int h)
 		return (NULL);
 
 	arr = malloc(sizeof(int) * (w * h));
-	arr_2d = malloc(sizeof(int*) * h);
+	if (!arr)
+		return (NULL);
+
+	arr_2d = malloc(sizeof(int *) * h);
+	if (!arr_2d)
+		return (NULL);
 
 	for (len1 = 0; len1 < h; len1++)
 	{
