@@ -4,7 +4,8 @@
   * @w: width of grid
   * @h: height of grid
   *
-  * Return: ponter to grid, NULL if w or h is 0 or negative, NULL if malloc fails
+  * Return: ponter to grid, NULL if w or h is 0 or negative
+  *         NULL if malloc fails
   */
 
 int **alloc_grid(int w, int h)
