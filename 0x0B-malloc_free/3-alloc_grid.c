@@ -36,5 +36,7 @@ int **alloc_grid(int w, int h)
 			len++;
 		}
 	}
+	free(arr);
+
 	return (arr_2d);
 }
