@@ -12,16 +12,15 @@ int **alloc_grid(int w, int h)
 {
 	int len = 0, len1, len2;
 	int *arr, **arr_2d;
-	void *trc;
 
 	if (w <= 0 || h <= 0)
 		return (NULL);
 
-	trc = malloc((sizeof(int) * (w * h)) + (sizeof(int *) * h));
-	if (trc == NULL)
+	arr_2d = malloc((sizeof(int) * (w * h)) + (sizeof(int *) * h));
+	if (arr_2d == NULL)
 		return (NULL);
-	arr_2d = trc;
-	arr = (int *) arr_2d + h;
+
+	arr = (int *) arr_2d + ((sizeof(int **) / sizeof(int)) * h);
 
 	for (len1 = 0; len1 < h; len1++)
 	{
