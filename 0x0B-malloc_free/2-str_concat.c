@@ -9,37 +9,31 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int a, b, c;
-	char *array;
+	unsigned int a, b, c = 0;
+	char *arr;
 
-	b = 0;
-	a = 0;
-	for (; (s1 != NULL && s1[b] != '\0') || (s2 != NULL && s2[a] != '\0');)
-	{
-		if (s1[b] != '\0' && s1 != NULL)
-			b++;
-		if (s2[a] != '\0' && s2 != NULL)
-			a++;
-	}
-	c = a + b;
-	if (c == 0)
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
+	for (a = 0; s1[a] != '\0'; a++)
+		c++;
+	for (b = 0; s2[a] != '\0'; b++)
+		c++;
+
+	arr = malloc(sizeof(char) * ++c);
+	if (arr == NULL)
 		return (NULL);
-	c++;
-	array = malloc(sizeof(char) * c);
-	if (array == NULL)
-		return (NULL);
-	for (a = 0; a < c; a++)
+
+	for (a = 0; s1[a] != '\0'; a++)
+		arr[a] = s1[a];
+
+	for (b = 0; s2[b] != '\0'; b++)
 	{
-		if (s1[a] != '\0' && s1 != NULL)
-			array[a] = s1[a];
-		else
-		{
-			for (b = 0; s2[b] != '\0' && s2 != NULL; b++)
-			{
-				array[a] = s2[b];
-				a++;
-			}
-		}
+		arr[a] = s2[b];
+		a++;
 	}
-	return (array);
+
+	return (arr);
 }
