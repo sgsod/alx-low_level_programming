@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
   * main - multiply two numbers
-  * @argc - number of arguments
+  * @argc: number of arguments
   * @argv: arguments
   *
   * Return: 0 success, 1 failure
@@ -11,6 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int num1, num2, mul;
+
 	if (argc != 3)
 	{
 		printf("Error\n");
