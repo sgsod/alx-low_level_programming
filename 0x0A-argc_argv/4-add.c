@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 
 	for (index = 1; index < argc; index++)
 	{
-		for (j = 0; j <= 9; j++)
+		for (j = 0; argv[index][j] != '\0'; j++)
 		{
 			if (!(argv[index][j] >= '0' && argv[index][j] <= '9'))
 			{
