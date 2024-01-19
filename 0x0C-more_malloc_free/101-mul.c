@@ -38,6 +38,7 @@ int main(int argc, char *argv[])
 int _isdigit(int argc, char *argv[])
 {
 	int index, j;
+
 	for (index = 1; index < argc; index++)
 	{
 		for (j = 0; argv[index][j] != '\0'; j++)
@@ -45,7 +46,7 @@ int _isdigit(int argc, char *argv[])
 			if (!(argv[index][j] >= '0' && argv[index][j] <= '9'))
 			{
 				printf("Error\n");
-				exit (98);
+				exit(98);
 			}
 		}
 	}
