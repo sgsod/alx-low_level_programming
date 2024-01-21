@@ -7,7 +7,7 @@
 char *rot13(char *str)
 {
 	char rot[125] = {0};
-	short h1 = 'a', h2 = 'n' ;
+	short h1 = 'a', h2 = 'n';
 	int n;
 
 	for (n = 0; n < 13; n++)
