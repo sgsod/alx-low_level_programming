@@ -1,10 +1,11 @@
-#include "dog.h"
 #include <stdlib.h>
+#include "dog.h"
 /**
   * new_dog - store a copy of name and owner
   * @name: dog's name
   * @age: age of dog
   * @owner: owner of dog
+  * Return: pointer to struct (success), NULL (failure)
   */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -13,10 +14,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog = malloc(sizeof(dog_t));
 	if (dog == NULL)
 		return (NULL);
-	if (name != NULL)
-		dog->name = name;
-	if (owner != NULL)
-		dog->owner = owner;
+	dog->name = name;
+	dog->owner = owner;
 	dog->age = age;
 	return (dog);
 }
