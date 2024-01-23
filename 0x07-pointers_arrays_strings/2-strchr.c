@@ -8,11 +8,12 @@
 char *_strchr(char *s, char c)
 {
 	int n;
+	void *NULL = 0;
 
 	for (n = 0; s[n] != '\0'; n++)
 	{
 		if (s[n] == c)
 			return (&s[n]);
 	}
-	return ((char *) 0);
+	return (NULL);
 }

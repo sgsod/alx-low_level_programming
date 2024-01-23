@@ -4,10 +4,10 @@
 #include <string.h>
 
 int _errorcheck(int argc, char *argv[]);
-int _contval(char *str1);
-int _cfzero(char *str);
-int _swpval(char *str);
-int mul(char *ans, char *str1, char *str2);
+int _contval(char *str1[]);
+int _cfzero(char *str[]);
+int _swpval(char *str[]);
+int mul(char *ans, char *str1[], char *str2[]);
 int print_ans(char *ans);
 /**
   * main - multiply two numbers
@@ -132,7 +132,7 @@ int _swpval(char *str)
   * @str1: first number
   * @str2: second number
   */
-int mul(char *ans, char *str1, char *str2)
+int mul(char *ans, char *str1[], char *str2[])
 {
 	int n, m, b, m1, n1;
 

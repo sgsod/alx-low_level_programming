@@ -5,27 +5,24 @@
   * @argc: number of arguments
   * @argv: arguments
   *
-  * Return: 0 success, 1 failure
+  * Return: 0 success,0 1 failure
   */
 
 int main(int argc, char *argv[])
 {
-	int count = 0, rem, amnt;
+	int count = 0, rem, amnt, arr[5];
 
 	if (argc > 2 || argc < 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-
 	amnt = atoi(argv[1]);
-
 	if (amnt <= 0)
 	{
 		printf("0\n");
 		return (0);
 	}
-
 	if (amnt >= 25)
 	{
 		count = amnt / 25;
