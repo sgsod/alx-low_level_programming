@@ -28,7 +28,8 @@ int main(int argc, char *argv[])
 		return (100);
 	}
 
-	if (get_op_func(argv[2]) == NULL) /* operator not present */
+	if (get_op_func(argv[2]) == NULL || *(argv[2] + 1) != '\0')
+		/* operator not present */
 	{
 		printf("Error\n");
 		return (99);
