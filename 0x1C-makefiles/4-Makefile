@@ -1,9 +1,9 @@
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra -pedantic
 NAME = school
+SRC = main.c school.c
 OBJ = $(SRC:%.c=%.o)
 RM = rm -f
-SRC = $(wildcard *.c)
 TOCLEAN = *~
 
 all : ${OBJ}
