@@ -1,4 +1,6 @@
+m.h
 school
 school.c
-m.h
 main.c
+school.o
+main.o
