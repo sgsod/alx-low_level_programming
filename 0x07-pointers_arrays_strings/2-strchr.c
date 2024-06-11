@@ -1,3 +1,4 @@
+#include <string.h>
 /**
   * _strchr - find character in string
   * @s: string
@@ -8,7 +9,6 @@
 char *_strchr(char *s, char c)
 {
 	int n;
-	void *NULL = 0;
 
 	for (n = 0; s[n] != '\0'; n++)
 	{
@@ -16,7 +16,7 @@ char *_strchr(char *s, char c)
 			return (&s[n]);
 	}
 
-	if (c == '\0' && c != NULL)
+	if (c == '\0' && s != NULL)
 		return (&s[n]);
 
 	return (NULL);
