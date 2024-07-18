@@ -1,4 +1,4 @@
-#include "search_argos.h"
+#include "search_algos.h"
 
 /**
  * binary_search - searches for value in array
@@ -18,25 +18,26 @@ int binary_search(int *array, size_t size, int value)
 	if (array == NULL)
 		return (-1);
 
+	min = 0;
 	max = size - 1;
 
-	for (min = 0; min <= max;)
+	while (min <= max)
 	{
-		mid = (low + high) / 2;
+		mid = (min + max) / 2;
 
 		printf("Searching in array: ");
-		for (index = 0; index < size; index++)
+		for (index = min; index <= max; index++)
 		{
-			if (index == size - 1)
+			if (index == max)
 				printf("%i\n", array[index]);
 			else
 				printf("%i, ", array[index]);
 		}
 
 		if (array[mid] < value)
-			min = ++mid;
+			min = mid + 1;
 		else if (array[mid] > value)
-			max = --mid;
+			max = mid - 1;
 		else
 			return (mid);
 	}
